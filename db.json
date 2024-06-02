@@ -35,6 +35,50 @@
       "name": "Cookies",
       "category": "Dessert",
       "isInCart": false
+    },
+    {
+      "name": "Red Velvet Cake",
+      "category": "Dessert",
+      "id": 7
+    },
+    {
+      "name": "White Chocolate",
+      "category": "Dairy",
+      "id": 8
+    },
+    {
+      "name": "Dark Chocolate",
+      "category": "Dairy",
+      "id": 9
+    },
+    {
+      "name": "Cucumber",
+      "category": "Produce",
+      "id": 10
+    },
+    {
+      "name": "Maziwa Lala",
+      "category": "Dairy",
+      "isInCart": "false",
+      "id": 11
+    },
+    {
+      "name": "Cheddar cheese",
+      "category": "Dairy",
+      "isInCart": false,
+      "id": 12
+    },
+    {
+      "name": "Black Forest Cake",
+      "category": "Dessert",
+      "isInCart": false,
+      "id": 13
+    },
+    {
+      "name": "Chocolate Fudge Cake",
+      "category": "Dessert",
+      "isInCart": false,
+      "id": 14
     }
   ]
 }
