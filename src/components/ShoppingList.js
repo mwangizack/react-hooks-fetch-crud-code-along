@@ -20,6 +20,22 @@ function ShoppingList() {
     setItems([...items, newItem])
   }
 
+  function handleUpdateItem(updatedItem){
+    const updatedItemsArray = items.map(item => {
+      if(item.id === updatedItem.id){
+        return updatedItem
+      }else{
+        return item
+      }
+    })
+    setItems(updatedItemsArray)
+  }
+
+  function handleDeleteItem(id){
+    const newItemsArray = items.filter(item => item.id !== id)
+    setItems(newItemsArray)
+  }
+
   function handleCategoryChange(category) {
     setSelectedCategory(category);
   }
@@ -39,7 +55,7 @@ function ShoppingList() {
       />
       <ul className="Items">
         {itemsToDisplay.map((item) => (
-          <Item key={item.id} item={item} />
+          <Item key={item.id} item={item} handleUpdateItem={handleUpdateItem} handleDeleteItem={handleDeleteItem}/>
         ))}
       </ul>
     </div>
